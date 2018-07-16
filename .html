@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>My Simulation To Shopify Site</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        /* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #000639 !important;
+}
+#footer h5{
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+hr{ 
+	border: 0; 
+	height: 1px; 
+	background: #161c4a;
+	width: 100% 
+	
+	 }
+
+.footer-nav a {
+    line-height: 70px;
+    transition-property: border-color, fill;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-right: 0.9375em;
+    color: #ffffff;
+    transition-duration: 300ms;
+    font-family: Helvetica, Arial, Lucida , sans-serif;
+    }
+.footer-nav {
+
+    border-bottom: 1px solid #161c4a;	
+
+} 
+h5 {
+    margin: 0 0 0.5625em;
+    color: #ffffff;
+    letter-spacing: normal;
+    font-family: Helvetica, Arial, sans-serif;
+}   
+#footer ul{
+	    font-family: Helvetica, Arial, Lucida, sans-serif;
+	    line-height: 1.5;
+	    font-size: 1.1em;
+		padding: 0.375em 0;
+
+}
+
+.p_color{
+	color: #ffffff;
+}
+#inputEmail{
+width: 30em;
+margin-left: 10em;
+margin-right: 0.5em;
+}	
+#btn_color{
+	background-color: #fb8b8a;
+	margin-left: 0.3em;
+} 
+#span_color{
+	color: #47c1bf;
+}
+#div-f{
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.222;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.DIV2{
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: #f4f6f8;
+
+}
+.DIV2 p{
+	font-weight: 400;
+	color: #637381;
+	font-size: 1.25em;
+	margin-bottom: 0.9em;
+
+}
+.p2{
+	margin-top: -20px;
+}
+.DIV2 button{
+	color: #5c6ac4;
+	height: 3em;
+	width: 13em;
+	font-weight: bold;
+
+
+}
+.contour-btn {
+color: #5c6ac4;
+background-color: #ffffff;
+border-color: #5c6ac4;
+
+}
+
+.contour-btn:hover,
+.contour-btn:focus {
+color: #ffffff !important;
+background-color: #5c6ac4 !important;
+border-color: #5c6ac4 !important;
+}
+.DIV2 h2{
+	font-weight: bold;
+}
+
+body{
+	background-color: #f4f6f8;
+}
+
+.table img{
+	width: 80px;
+	height: 80px;
+
+}
+.table{
+	text-align: center;
+
+}
+
+.table tr{
+	border: none
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 0px solid #dee2e6;
+    font-size: 1.2em;
+}
+.t_center{
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 0.83333em;
+}
+.t_col{
+		color: #637381;
+}
+.card_bottom{
+
+
+    padding: 50px 30px 30px 50px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    text-align: center;
+}
+.card_bottom p{
+	color: white;
+	font-size: 1.125em;
+	font-style: normal;
+	font-family:  Helvetica, Arial, Lucida , sans-serif;
+}
+.card{
+	  box-shadow: 0px 0px 23px -3px #ccc;
+}
+.card-text{
+	color: #637381;
+	font-size: 1.125em;
+}
+.userImg img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: -40px;
+    margin-left: 5em;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    
+}
+.DIV4{
+	margin-bottom: 100px;
+}
+.card_bottom .p1{
+	font-weight: 700;
+}
+.DIV5{
+	background-image: url("20.jpg");
+	text-align: center;
+}
+.DIV5 h2{
+	font-kerning: normal;
+	font-size: 1.75em;
+    margin-bottom: 0.41667em;
+    line-height: 1.222;
+	font-weight: 700;
+	font-family:  Helvetica, Arial, sans-serif;
+	letter-spacing: -0.025em;
+	margin-top: 50px;
+
+}
+.DIV5 span{
+	color: #5c6ac4;
+	font-size: 1.75em;
+	margin-bottom: 0.41667em;
+	margin-top: 100em;
+}
+.DIV5 p{
+	color: #637381;
+	margin-bottom: 0.9375em;
+	font-size: 0.875em;
+	line-height: 1.222;
+	font-weight: 700;
+	font-family:  Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+
+}
+
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- DIV5 -->
+	<div class="DIV5">
+	<h2>Shopify powers ambitious entrepreneurs all over the world</h2>
+	<div>
+	<span> 600,000</span>
+	<p>Businesses powered by Shopify</p>
+	</div>
+	<div>
+	<span>1,000,000+</span> 
+	<p>Active users</p>
+	</div>
+	<div>
+	<span> $63B+</span> 
+	<p>Sold on Shopify</p>
+	</div>
+
+
+	</div>
+
+
+<!-- DIV4  -->
+	<div class="container DIV4">
+		<div class="row">
+		  <div class="col-md-4 col-sm-4">
+		    <div class="card">
+		      <div class="card-body">
+		        <p class="card-text">I am seriously happy about running our store on Shopify. Powerful features and easy to set up, running an online store shouldn’t be this much fun! .</p>
+		        <div class="userImg">
+                   <img src="13.jpg">
+               </div>
+		        <div class="card_bottom " style="background-color: #fb8b8a;">
+		        	<p class="p1">Tina Roth Eisenberg</p>
+		        	<p>Designer, Founder of Tattly</p>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-md-4 col-sm-4">
+		    <div class="card">
+		      <div class="card-body">
+		        <p class="card-text">Shopify has helped me grow my business amazingly. It’s been a pleasure because everything has been easier than I ever imagined. </p>
+		        <div class="userImg">
+                   <img src="11.jpg">
+               </div>
+		        <div class="card_bottom " style="background-color: #5c6ac4;">
+		        	<p class="p1">Corrine Anestopoulos</p>
+		        	<p>Founder, BIKO Jewelry</p>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-md-4 col-sm-4">
+		    <div class="card">
+		      <div class="card-body">
+		        <p class="card-text">The best thing about Shopify is that it’s made me not have to worry about anything that has to do with ecommerce.</p>
+		        <div class="userImg">
+                   <img src="12.jpg">
+               </div>		        
+		        <div class="card_bottom " style="background-color:#47c1bf;">
+		        	<p class="p1">Chris Tsang</p>
+		        	<p>Founder, Mindzai Toys</p>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+
+
+		</div>
+	</div>
+
+
+<!-- DIV3 table -->
+	<h3 class="t_center">All the features you need</h3>
+	<p class="t_center t_col">Perfect for beginners and experts alike</p>
+	<table class="table" >
+  <tbody>
+    <tr>
+      <td ><img src="1.svg"> <br>Fully customizable website, online store, and blog<br>
+      <a href="#"> Website features</a></td>
+      <td ><img src="2.svg"><br>Unlimited bandwidth, product inventory, and customer data<br>
+      <a href="#">Inventory features</a></td>
+    </tr>
+    <tr>
+      <td ><img src="3.svg"><br>Sell on new sales channels like Pinterest and Amazon<br>
+      <a href="#"> Sales channels</a></td>
+      <td ><img src="4.svg"><br>Accept credit cards instantly with Shopify Payments<br>
+      <a href="#">Shopify Payments</a></td>
+    </tr>
+    <tr>
+      <td ><img src="5.svg"><br>Save time and money with Shopify Shipping and discounted rates<br>
+      <a href="#">Shopify Shipping </a></td>
+      <td ><img src="6.svg"><br>We’re here to help with 24/7 award-winning customer support<br>
+      <a href="#">Help Center</a></td>
+    </tr>    
+
+  </tbody>
+</table>
+
+
+
+<!-- DIV2 -->
+	<div class="container DIV2">
+		<h2>Need products to start?</h2>
+		<p >
+			No worries. We’re here to help you at every stage </p><p class="p2">
+			of your journey.
+		</p>
+		<button type="button" class="btn contour-btn btn-lg">Find product</button>
+		
+	</div>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+	<section id="footer">
+
+
+
+			<div id="div-f">
+				<h2 class="p_color text-center">Start your 14-day <span id="span_color">free trial</span> today!</h2>
+				<br>
+				<div class="input-group ">
+				  <input type="text" class=" input-group-lg form-control-lg" id="inputEmail" placeholder="Enter your email address" />
+				    <button type="button" id="btn_color" class="btn btn-primary btn-lg">Get started</button>
+				</div>
+				<br>
+				<p class="p_color text-center ">Try Shopify free for 14 days. No credit card required.</p>
+			</div>
+
+
+
+	<hr>
+	<div class="container">
+
+			
+			<div class="footer-nav">
+	            <a href="#">About</a>
+	            <a href="#">Careers</a>
+	            <a href="#">Press and Media</a>
+	            <a href="#">Enterprise</a>
+	            <a href="#">Sitemap</a>
+        	</div>
+        	<br>
+			<br>
+
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-2 col-md-2">
+					<h5>Online store</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#">Sell online</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Examples</a></li>
+						<li><a href="#">Website editor</a></li>
+						<li><a href="#">Online retail</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-2 col-md-2">
+					<h5> <br/></h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#">Ecommerce website</a></li>
+						<li><a href="#">Domain names</a></li>
+						<li><a href="#">Themes</a></li>
+						<li><a href="#">Shopping cart</a></li>
+						<li><a href="#">Ecommerce hosting</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-2 col-md-2">
+					<h5> <br/></h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#">Mobile commerce</a></li>
+						<li><a href="#">Ecommerce software</a></li>
+						<li><a href="#">Online store builder</a></li>
+						<li><a href="#">Dropshipping</a></li>
+						<li><a href="#">Point of sale</a></li>
+					</ul>
+				</div>
+
+				<div class="col-xs-12 col-sm-2 col-md-2">
+					<h5>Point of sale</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#">Point of sale</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Hardware</a></li>
+						<li><a href="#">POS software</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-2 col-md-2">
+					<h5>Support</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#">24/7 support</a></li>
+						<li><a href="#">Shopify Help Center</a></li>
+						<li><a href="#">Forums</a></li>
+						<li><a href="#">API documentation</a></li>
+						<li><a href="#">Free tools</a></li>
+						<li><a href="#">Free stock photos</a></li>
+						<li><a href="#">Websites for sale</a></li>
+						<li><a href="#">Logo maker</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-2 col-md-2">
+					<h5>Shopify</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Shopify Help Center</a></li>
+						<li><a href="#">Partner program</a></li>
+						<li><a href="#">Affiliate program</a></li>
+						<li><a href="#">App developers</a></li>
+						<li><a href="#">Investors</a></li>
+						<li><a href="#">Blog topics</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr />
+<!-- 		 <div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+			</hr>
+		 </div>	 -->
+	</div>
+	</section>
+	<!-- ./Footer -->
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
